@@ -1,0 +1,20 @@
+server:
+  port:  8880
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  redis:
+    host: 172.24.170.121
+    port: 6379
+    password: 0
+    database: 0
+    jedis:
+      pool:
+        max-idle: 1000
+        max-active: 1000
+        max-wait: 3000
+        min-idle: 100
+  resources:
+    static-locations: /WEB-INF/static/
